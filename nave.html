@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>nave</title>
+        <style>
+
+#d1 div {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+#d2 div {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+
+}
+#d2{
+    position: absolute;
+    left:110px;
+    display: none;
+}
+#d1{
+    position: absolute;
+    left:10px;
+}
+button{
+    position: absolute;
+    top:17px;
+}
+#dd1{
+    position: absolute;
+    top:80px;
+    background-color: rgb(238, 238, 108);
+    width: 150px;
+    height: 305px;
+    display:none;
+
+}
+p{
+    font-size: 20pt;
+    text-align: center;
+}
+p:hover{
+    background-color: pink;
+}
+        </style>
+    </head>
+    <body>
+        <button onclick="mnnr();" id="d1">
+            <div></div>
+            <div></div>
+            <div></div>   
+        </button>
+        <button onclick="mnnr2();" id="d2">
+            <div></div>
+            <div></div>
+            <div></div>   
+        </button>
+    <div id="dd1">
+        <p style="padding:15px;margin-top: 0px;">home</p>
+        <p style="padding:15px;margin-top: -25px;" >courses</p>
+        <p style="padding:15px;margin-top: -25px;" >explain</p>
+        <p style="padding:15px;margin-top: -25px;" >about us</p>
+        <p style="padding:15px;margin-top: -25px;" >contact us</p>
+    </div> 
+        <script>
+            let d1=document.getElementById("d1");
+            let d2=document.getElementById("d2");
+            let dd1=document.getElementById("dd1");
+            function mnnr() {
+d2.style.display='block';
+d1.style.display='none';
+dd1.style.display='block';
+}
+function mnnr2() {
+d2.style.display='none';
+d1.style.display='block';
+dd1.style.display='none';
+}
+
+        </script>
+    </body>
+</html>
